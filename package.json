@@ -1,0 +1,57 @@
+{
+  "name": "rxjs-operator-analyzer",
+  "version": "1.0.0",
+  "description": "A formal, automated, and visual system for analyzing RxJS operator behavior using the Mealy 6-Tuple method.",
+  "main": "dist/index.js",
+  "bin": {
+    "operator-analyzer": "./bin/operator-analyzer"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/bin/operator-analyzer",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "rxjs",
+    "operator",
+    "analysis",
+    "mealy",
+    "state-machine",
+    "testing",
+    "visualization"
+  ],
+  "author": "Hans Schenker <hans.schenker@example.com>",
+  "contributors": [
+    {
+      "name": "Mistral AI",
+      "email": "mistral@mistral.ai"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "yargs": "^17.7.2",
+    "rxjs": "^7.8.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.5",
+    "@types/node": "^20.11.0",
+    "@types/yargs": "^17.0.24",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.0",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "@typescript-eslint/parser": "^6.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hansschenker/rxjs-operator-analyzer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hansschenker/rxjs-operator-analyzer/issues"
+  },
+  "homepage": "https://github.com/hansschenker/rxjs-operator-analyzer#readme"
+}
